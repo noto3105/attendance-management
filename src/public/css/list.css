@@ -1,0 +1,139 @@
+body {
+    background-color: #f0eff2;
+}
+
+.list__content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f0eff2;
+    border-radius: 8px;
+}
+
+.header__container {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.header__logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 15px;
+    border-left: 8px solid #000;
+}
+
+.monthly__content {
+    display: flex;
+    background-color: #fff;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.month__nav {
+    display: flex;
+}
+
+.month__btn {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    color: #737373;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.month__btn img {
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+}
+
+.month__label {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.attendance_table {
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 14px;
+}
+
+.table_head {
+    background-color: #fff;
+    font-weight: bold;
+}
+
+.attendance_table th,
+.attendance_table td {
+    background-color: #fff;
+    padding: 10px;
+    color: #737373;
+    border-bottom: 1px solid #ddd;
+}
+
+.attendance__data:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.attendance__data a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+@media (min-width: 1400px) and (max-width: 1540px) {
+    .monthly__content {
+        padding: 0 60px;
+    }
+
+    .month__label {
+        font-size: 18px;
+    }
+
+    .month__btn {
+        font-size: 15px;
+    }
+
+    .attendance__table th,
+    .attendance__table td {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 850px) {
+    .monthly__content {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .month__label {
+        font-size: 16px;
+    }
+
+    .month__btn {
+        font-size: 13px;
+    }
+
+    .attendance__table {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .attendance__table th,
+    .attendance__table td {
+        padding: 8px 12px;
+    }
+
+    .attendance__table td:last-child a {
+        font-size: 13px;
+        padding: 4px 8px;
+    }
+}

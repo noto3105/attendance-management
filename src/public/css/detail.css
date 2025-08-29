@@ -1,0 +1,125 @@
+body {
+    background-color: #f0eff2;
+}
+
+.detail {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: sans-serif;
+}
+
+.title__content {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.title__logo {
+    font-size: 20px;
+    font-weight: bold;
+    border-left: 8px solid #000;
+    padding-left: 10px;
+}
+
+.application__form {
+    width: 100%;
+}
+
+.detail__table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.detail__table th,
+.detail__table td {
+    border: 0;
+    padding: 14px 20px;
+    text-align: center;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.left__column {
+    color: #737373;
+    font-weight: bold;
+    width: 20%;
+}
+
+.detail__table input[type="text"],
+.detail__table textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.detail__table tr+tr {
+    border-top: 1px solid #e1e1e1;
+}
+
+.application__error {
+    color: #ff0000;
+}
+
+.application-btn__container {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.application-btn__submit {
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.application-btn__submit--done {
+    opacity: .6;
+}
+
+.application-btn__submit:hover {
+    opacity: 0.8;
+}
+
+.application-btn__note {
+    margin-top: 12px;
+    text-align: right;
+    font-size: 12px;
+    color: #ff0000;
+}
+
+@media (max-width: 850px) and (min-width: 768px) {
+    .detail {
+        padding: 10px;
+    }
+
+    .detail__table th,
+    .detail__table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 1540px) and (min-width: 1400px) {
+    .detail {
+        max-width: 1000px;
+    }
+
+    .title__logo {
+        font-size: 24px;
+    }
+
+    .detail__table th,
+    .detail__table td {
+        font-size: 16px;
+        padding: 14px;
+    }
+}

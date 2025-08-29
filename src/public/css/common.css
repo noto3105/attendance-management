@@ -1,0 +1,43 @@
+.header {
+    background-color: #000;
+    padding: 10px 20px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 2400px;
+    margin: 0 auto;
+}
+
+.header__left img {
+    height: 32px;
+    display: block;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.header-nav__btn {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    background: none;
+    border: none;
+    padding: 6px 8px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.header-nav__btn:hover {
+    opacity: 0.7;
+}
+
+form {
+    margin: 0;
+}

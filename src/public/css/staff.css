@@ -1,0 +1,100 @@
+body {
+    background-color: #f9f9f9;
+}
+
+.staff__list {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.staff__title-container {
+    border-left: 5px solid #000;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.staff__title-logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.staff__table-wrapper {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.staff__table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.staff__table-head th {
+    background-color: #fff;
+    text-align: center;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #737373;
+    border-bottom: 2px solid #e1e1e1;
+}
+
+.staff__table-row td {
+    padding: 12px;
+    border-bottom: 1px solid #e1e1e1;
+    font-size: 14px;
+    color: #737373;
+}
+
+.staff__attendance-link {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1540px) {
+    .staff__list {
+        max-width: 1000px;
+        padding: 24px;
+    }
+
+    .title__logo {
+        font-size: 1.75rem;
+    }
+
+    .staff__table {
+        font-size: 15px;
+    }
+
+    .table__head th,
+    .table__data td {
+        padding: 14px 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 850px) {
+    .staff__list {
+        max-width: 90%;
+        padding: 16px;
+    }
+
+    .title__logo {
+        font-size: 1.4rem;
+    }
+
+    .staff__table {
+        font-size: 13px;
+    }
+
+    .table__head th,
+    .table__data td {
+        padding: 10px 14px;
+    }
+
+    .staff-attendance__link {
+        font-size: 13px;
+    }
+}

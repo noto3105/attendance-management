@@ -1,0 +1,110 @@
+body {
+    background-color: #f0eff2;
+    height: 900px;
+}
+
+.list__content {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.head__logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-left: 8px solid #000;
+    padding-left: 10px;
+}
+
+.day-bar__content {
+    display: flex;
+    background-color: #fff;
+    height: 40px;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.day-bar__btn {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.day-bar__today {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.day-bar__btn img {
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+}
+
+.attendance_table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    color: #737373;
+    border-radius: 3px;
+}
+
+.table__head {
+    background-color: #fff;
+}
+
+.attendance_table th,
+.attendance_table td {
+    border: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 2px solid #ddd;
+}
+
+.attendance_table th {
+    font-weight: bold;
+}
+
+.attendance__detail-link {
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 850px) {
+    .day-bar__content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .attendance_table th,
+    .attendance_table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .head__logo {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1540px) and (min-width: 1400px) {
+    .list__content {
+        padding: 40px;
+    }
+
+    .attendance_table th,
+    .attendance_table td {
+        font-size: 16px;
+        padding: 12px;
+    }
+}

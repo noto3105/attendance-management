@@ -1,0 +1,161 @@
+.container__text-center {
+    max-width: 2400px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    background-color: #f0eff2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.not-working,
+.working,
+.breaking,
+.finished {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.not-working {
+    background-color: #e0e0e0;
+    color: #696969;
+}
+
+.working {
+    background-color: #e0e0e0;
+    color: #696969;
+}
+
+.breaking {
+    background-color: #e0e0e0;
+    color: #696969;
+}
+
+.finished {
+    background-color: #e0e0e0;
+    color: #696969;
+}
+
+.day p {
+    font-size: 35px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.time__container {
+    margin-bottom: 40px;
+}
+
+.time {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* ボタン共通スタイル */
+.start__btn,
+.end__btn,
+.break-in__btn,
+.break-out__btn {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.start__btn {
+    background-color: #000;
+    color: #fff;
+}
+
+.end__btn {
+    background-color: #000;
+    color: #fff;
+}
+
+.break-in__btn,
+.break-out__btn {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+/* 勤務中ボタン配置 */
+.working__container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+/* 退勤済メッセージ */
+.finished__text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #999;
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1540px) {
+    .container__text-center {
+        max-width: 600px;
+        padding: 60px 40px;
+    }
+
+    .time {
+        font-size: 56px;
+    }
+
+    .start__btn,
+    .end__btn,
+    .break-in__btn,
+    .break-out__btn {
+        width: 240px;
+        font-size: 20px;
+        padding: 14px 32px;
+    }
+
+    .working__container {
+        gap: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 850px) {
+    .container__text-center {
+        padding: 30px 16px;
+    }
+
+    .time {
+        font-size: 42px;
+    }
+
+    .start__btn,
+    .end__btn,
+    .break-in__btn,
+    .break-out__btn {
+        width: 160px;
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .working__container {
+        flex-direction: column;
+        gap: 12px;
+    } 
+}
