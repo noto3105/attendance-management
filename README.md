@@ -23,6 +23,11 @@ php artisan migrate
 6 シーディングの実行  
 php artisan db:seed
 
+## ER図
+
+<img width="567" height="653" alt="スクリーンショット (210)" src="https://github.com/user-attachments/assets/c7fe9c3f-ff13-4cb8-8573-aeb1adb6b76f" />  
+
+
 ## メール認証
 mailhogというツールを使用しています。  
 以下の方法で起動してください。 
